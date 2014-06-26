@@ -1,0 +1,303 @@
+/*
+Theme Name: KindaModern
+Author: François Bouvard
+Author URI: http://francoisbouvard.com/kindamodern
+Version: 2.0
+*/
+
+
+/*** RESET ***/
+
+html, body, div, span, h1, h2, h3, p, blockquote,
+del, em, img, small, strong, a, b, i, ul, li,
+article, footer, header, nav, section {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-weight: normal;
+   	-webkit-appearance: none;
+}
+
+ul,ol { list-style: none; }
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section { display: block; }
+
+
+/*** STRUCTURE & LAYOUT ***/
+
+body {
+	max-width: 600px; /* iPad portrait = 768px */
+	margin: 64px auto;
+}
+
+header, footer, nav, section { width: 80%; }
+
+header, footer { margin: 32px auto; }
+
+nav, section { margin: 64px auto; }
+
+li:not(:last-child).content { padding-bottom: 64px; }
+
+p { margin-top: 14px; }
+
+h3 { margin-top: 28px; }
+
+header p, footer p+p { margin-top: 0px; }
+
+footer, nav { text-align: center; }
+
+h1, h2, h3, .meta { display: block; }
+
+
+/*** GENERAL STYLING RULES ***/
+
+body {
+	background: #F8F7F3;
+	color: #403f3a;
+	font: normal normal 100%/1.5em 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased; /* Heavy anti-aliasing */
+	-webkit-text-size-adjust: none; /* Prevent font scaling in landscape view */
+}
+
+a {
+	color: #41403B;
+	font-weight: bold;
+}
+
+a:hover,
+a:focus {
+	color: #000;
+	text-decoration: underline;
+}
+
+a:active {
+	position: relative;
+	top: 1px;
+}
+
+h1, h2, h3 { font-weight: bold; }
+
+header,
+nav,
+footer,
+.meta { cursor: default; }
+
+del { text-decoration: line-through; }
+
+mark { background: #e5e3dc; }
+
+hr {
+	text-align: center;
+	border: none;
+	margin: 3em 0 3em 2em;
+}
+
+hr::after {
+	content: "··•··";
+	letter-spacing: 2em;
+}
+
+
+/*** HEADER ***/
+
+h1 {
+	font-size: 26px;
+	line-height: 1.5em;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+}
+
+header p.subtitle { font-size: 14px; }
+
+header p.single { text-align: left; }
+
+
+/*** CONTENT ***/
+
+h2 { font-size: 18px; }
+
+h3 { font-size: 17px; }
+
+blockquote {
+	padding-left: 10px;
+	border-left: 1px solid #CCC;
+}
+
+code, pre {
+	font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+	color: #000;
+	background: #e5e3dc;
+	border: 1px solid #CCC;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding: 0 1px;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+}
+
+pre code {
+	background: none;
+	border: none;
+	padding: 0px;
+}
+
+p code { margin: 0 1px; }
+
+pre {
+	padding: 16px;
+	line-height: 1.2em;
+}
+
+.meta {
+	color: #3252ba;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: default;
+}
+
+.meta a {
+	font-size: 9px;
+	position: relative;
+	top: -1px;
+	color: #e0ded6;
+	padding: 0px 3px;
+	border: 1px solid #e5e3dc;
+	border-radius: 2px;      	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.meta a:hover,
+.meta a:focus {
+	border: 1px solid #3252BB;
+	color: #fff;
+	background: #3252BB;
+	text-decoration: none;
+}
+
+.star {
+	position: relative;
+	top: -1px;
+}
+
+img {
+	width: 100%;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.25);
+	box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.25);
+}
+
+
+/*** NAVIGATION ***/
+
+ul.page-numbers li { display: inline; }
+
+nav a,
+nav span {
+	display: inline-block;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border: 0px;
+	padding: 4px 5px;
+	min-width: 20px;
+}
+
+nav span.current {
+	background: #e5e3dc;
+	font-weight: bold;
+	border: 1px solid #e1ddcf;
+}
+
+nav a:hover,
+nav a:focus { border: 0px; }
+
+
+/*** FOOTER ***/
+
+footer {
+	font-size: 14px;
+	line-height: 2em;
+}
+
+form { text-align: center; }
+
+input[type=submit] { display: none; }
+
+input {
+	display: inline-block;
+	margin: 0px;
+	border: 1px solid #e0dccd;
+	width: 210px;
+	margin: 3px 0;
+	padding: 6px 4px;
+	background: #e5e3dc;
+	text-align: center;
+	font: normal bold 14px/1em 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+	color: #41403B;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	border-radius: 2px;      	
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-appearance: none;
+}
+
+input:active,
+input:focus {
+	outline: none;
+	color: #41403B;
+}
+
+input:-moz-placeholder { color: #41403B; }
+::-webkit-input-placeholder { color: #41403B; }
+:-ms-input-placeholder { color: #41403B; }
+::-moz-placeholder { color: #41403B; }
+
+
+/*** OPTIMISATION FOR SMALL SCREENS ***/
+
+@media
+only screen
+and (max-width : 568px) {
+
+	header, footer, nav, section { width: 90%; }
+	
+	nav, section, header, footer { margin: 48px auto; }
+	
+	header { text-align: center; }
+	
+	body { margin-top: 0px; }
+	
+	ul { margin: 24px auto; }
+
+	ul li.content { padding: 24px 0; }
+
+	.content p { 
+		text-align: justify;
+		hyphens: auto;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+	}
+	
+	.next, .prev { display: none; }
+}

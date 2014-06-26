@@ -1,0 +1,56 @@
+@-webkit-keyframes 'delayed_appearance' {
+	0%		{ opacity: 0; }
+    99%		{ opacity: 0; }
+    100%	{ opacity: 1; }
+}
+
+@-moz-keyframes 'delayed_appearance' {
+	0%		{ opacity: 0; }
+    99%		{ opacity: 0; }
+    100%	{ opacity: 1; }
+}
+
+@-o-keyframes 'delayed_appearance' {
+	0%		{ opacity: 0; }
+    99%		{ opacity: 0; }
+    100%	{ opacity: 1; }
+}
+
+@keyframes 'delayed_appearance' {
+	0%		{ opacity: 0; }
+    99%		{ opacity: 0; }
+    100%	{ opacity: 1; }
+}
+
+.firstdot {
+	-webkit-animation-name: 'delayed_appearance';
+    -webkit-animation-duration: 1s;
+	   -moz-animation-name: 'delayed_appearance';
+       -moz-animation-duration: 1s;
+	     -o-animation-name: 'delayed_appearance';
+         -o-animation-duration: 1s;
+	        animation-name: 'delayed_appearance';
+            animation-duration: 1s;
+}
+
+.seconddot {
+	-webkit-animation-name: 'delayed_appearance';
+    -webkit-animation-duration: 2s;
+	   -moz-animation-name: 'delayed_appearance';
+       -moz-animation-duration: 2s;
+	     -o-animation-name: 'delayed_appearance';
+         -o-animation-duration: 2s;
+	        animation-name: 'delayed_appearance';
+            animation-duration: 2s;
+}
+
+.thirddot {
+	-webkit-animation-name: 'delayed_appearance';
+    -webkit-animation-duration: 3s;
+	   -moz-animation-name: 'delayed_appearance';
+       -moz-animation-duration: 3s;
+	     -o-animation-name: 'delayed_appearance';
+         -o-animation-duration: 3s;
+	        animation-name: 'delayed_appearance';
+            animation-duration: 3s;
+}
